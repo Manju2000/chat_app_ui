@@ -36,12 +36,10 @@ class _State extends State<FriendsOnline> {
                 child: CircleAvatar(
                     backgroundImage: NetworkImage(e["imageUrl"]),
                     radius:35.0
-                ),
-              ):CircleAvatar(
+                ),):CircleAvatar(
                   backgroundImage: NetworkImage(e["imageUrl"]),
                   radius:35.0
-              )
-            );
+              ));
           }).toList()
         ),
       );

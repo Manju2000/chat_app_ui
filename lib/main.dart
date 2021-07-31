@@ -21,7 +21,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -31,35 +30,28 @@ class MyHomePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () {  },
           icon:Icon(Icons.search),
-
-
         ),
         centerTitle: true,
         title: Text("Contacts"),
         actions: [
           IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz))
-        ],
-      ),
+        ],),
       body: Column(
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Text("ONLINE"),
-            FlatButton.icon(
+            TextButton.icon(
                 label:Text("ADD FRIENDS"),
                 onPressed:(){},
                 icon: Icon(Icons.add),
-
-            )
-        ],),
+            ),
+          ],),
           FriendsOnline(),
           ConversationList()
-
-
         ],
-      )
-      ); // This trailing comma makes auto-formatting nicer for build methods
+      )); // This trailing comma makes auto-formatting nicer for build methods
   }
 }
 

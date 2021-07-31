@@ -4,8 +4,6 @@ import"package:flutter/material.dart";
 
 import '../dummy_data.dart';
 class ConversationList extends StatelessWidget {
-
-
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -35,16 +33,9 @@ class ConversationList extends StatelessWidget {
               TextStyle(color:Colors.grey):TextStyle(color:Colors.black,fontWeight: FontWeight.bold),
             ),
             trailing: conversationList[index]["noofmessagesunread"]==0?
-            Column(
-              children: [
-                Text(conversationList[index]["time"],style: TextStyle(
+            Text(conversationList[index]["time"],style: TextStyle(
                     color: Colors.grey
-                ),),
-
-
-              ],
-            ):
-                FittedBox(
+                )): FittedBox(
                   fit: BoxFit.contain,
                   child: Column(
                     children: [
@@ -53,14 +44,11 @@ class ConversationList extends StatelessWidget {
                       ),),
                       Badge(
                         badgeContent: Text(conversationList[index]["noofmessagesunread"].toString()),
-                      )
-                    ],
+                      )],
                   ),
-                )
-          );
+            ));
         },
         itemCount: conversationList.length
-        ,),
-    );
+        ,),);
   }
 }

@@ -78,5 +78,45 @@ List conversationList = [
     "time": "15th Jan",
     "messageread": false,
     "noofmessagesunread":1
+  },
+  {
+    "name": "Micheal",
+    "imageUrl": "https://randomuser.me/api/portraits/women/56.jpg",
+    "isOnline": false,
+    "hasStory": false,
+    "message": "Been a while!",
+    "time": "15th Jan",
+    "messageread": false,
+    "noofmessagesunread":1
+  },
+  {
+    "name": "Lucifier",
+    "imageUrl": "https://randomuser.me/api/portraits/women/56.jpg",
+    "isOnline": false,
+    "hasStory": false,
+    "message": "Hahahahahaha",
+    "time": "25th Jan",
+    "messageread": true,
+    "noofmessagesunread":0
+  },
+  {
+    "name": "Nova john",
+    "imageUrl": "https://randomuser.me/api/portraits/men/31.jpg",
+    "isOnline": true,
+    "hasStory": true,
+    "message": "Where are you?",
+    "time": "5:00 pm",
+    "messageread": true,
+    "noofmessagesunread":0
+  },
+  {
+    "name": "Daniel",
+    "imageUrl": "https://randomuser.me/api/portraits/men/81.jpg",
+    "isOnline": false,
+    "hasStory": false,
+    "message": "It's good!!",
+    "time": "7:00 am",
+    "messageread": false,
+    "noofmessagesunread":6
   }
 ];
