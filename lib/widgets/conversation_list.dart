@@ -10,7 +10,7 @@ class ConversationList extends StatelessWidget {
       child: ListView.builder(
         itemBuilder:(cxt,index) {
           return ListTile(
-            leading: conversationList[index]["isOnline"]?Badge(
+              leading: conversationList[index]["isOnline"]?Badge(
               position: BadgePosition(bottom:5,start: 2),
               badgeColor: Colors.lightGreenAccent.shade700,
               child: CircleAvatar(
@@ -21,34 +21,42 @@ class ConversationList extends StatelessWidget {
                 backgroundImage: NetworkImage(conversationList[index]["imageUrl"]),
                 radius:30.0
             ),
-            title: Text(
+            title:Text(
               conversationList[index]["name"],
               style:TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20
-              ) ,),
-            subtitle: Text(
+              ),
+            ),
+            subtitle:Text(
               conversationList[index]['message'],
-              style:conversationList[index]["messageread"]?
+              style:conversationList[index]["messages_read"]?
               TextStyle(color:Colors.grey):TextStyle(color:Colors.black,fontWeight: FontWeight.bold),
             ),
-            trailing: conversationList[index]["noofmessagesunread"]==0?
-            Text(conversationList[index]["time"],style: TextStyle(
+            trailing: conversationList[index]["no_of_messages_unread"]==0?
+            Text(
+                conversationList[index]["time"],
+                style: TextStyle(
                     color: Colors.grey
-                )): FittedBox(
+                ),
+            ): FittedBox(
                   fit: BoxFit.contain,
                   child: Column(
                     children: [
                       Text(conversationList[index]["time"],style: TextStyle(
                           color: Colors.grey
-                      ),),
+                        ),
+                      ),
                       Badge(
-                        badgeContent: Text(conversationList[index]["noofmessagesunread"].toString()),
-                      )],
+                        badgeContent: Text(conversationList[index]["no_of_messages_unread"].toString()),
+                      ),
+                    ],
                   ),
-            ));
+            ),
+          );
         },
         itemCount: conversationList.length
-        ,),);
+        ,),
+    );
   }
 }

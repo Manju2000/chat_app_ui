@@ -6,8 +6,8 @@ List conversationList = [
     "hasStory": true,
     "message": "Where are you?",
     "time": "5:00 pm",
-    "messageread": true,
-    "noofmessagesunread":0
+    "messages_read": true,
+    "no_of_messages_unread":0
   },
   {
     "name": "Derick",
@@ -16,8 +16,8 @@ List conversationList = [
     "hasStory": false,
     "message": "It's good!!",
     "time": "7:00 am",
-    "messageread": false,
-    "noofmessagesunread":3
+    "messages_read": false,
+    "no_of_messages_unread":3
   },
   {
     "name": "Mevis",
@@ -26,8 +26,8 @@ List conversationList = [
     "hasStory": false,
     "message": "I love You too!",
     "time": "6:50 am",
-    "messageread": true,
-    "noofmessagesunread":0
+    "messages_read": true,
+    "no_of_messages_unread":0
   },
   {
     "name": "Emannual",
@@ -36,8 +36,8 @@ List conversationList = [
     "hasStory": true,
     "message": "Got to go!! Bye!!",
     "time": "yesterday",
-    "messageread": true,
-    "noofmessagesunread":0
+    "messages_read": true,
+    "no_of_messages_unread":0
   },
   {
     "name": "Gracy",
@@ -46,8 +46,8 @@ List conversationList = [
     "hasStory": false,
     "message": "Sorry, I forgot!",
     "time": "2nd Feb",
-    "messageread": false,
-    "noofmessagesunread":4
+    "messages_read": false,
+    "no_of_messages_unread":4
   },
   {
     "name": "Robert",
@@ -56,8 +56,8 @@ List conversationList = [
     "hasStory": true,
     "message": "No, I won't go!",
     "time": "28th Jan",
-    "messageread": true,
-    "noofmessagesunread":0
+    "messages_read": true,
+    "no_of_messages_unread":0
   },
   {
     "name": "Lucy",
@@ -66,8 +66,8 @@ List conversationList = [
     "hasStory": false,
     "message": "Hahahahahaha",
     "time": "25th Jan",
-    "messageread": true,
-    "noofmessagesunread":0
+    "messages_read": true,
+    "no_of_messages_unread":0
   },
   {
     "name": "Emma",
@@ -76,8 +76,8 @@ List conversationList = [
     "hasStory": false,
     "message": "Been a while!",
     "time": "15th Jan",
-    "messageread": false,
-    "noofmessagesunread":1
+    "messages_read": false,
+    "no_of_messages_unread":1
   },
   {
     "name": "Micheal",
@@ -86,8 +86,8 @@ List conversationList = [
     "hasStory": false,
     "message": "Been a while!",
     "time": "15th Jan",
-    "messageread": false,
-    "noofmessagesunread":1
+    "messages_read": false,
+    "no_of_messages_unread":1
   },
   {
     "name": "Lucifier",
@@ -96,8 +96,8 @@ List conversationList = [
     "hasStory": false,
     "message": "Hahahahahaha",
     "time": "25th Jan",
-    "messageread": true,
-    "noofmessagesunread":0
+    "messages_read": true,
+    "no_of_messages_unread":0
   },
   {
     "name": "Nova john",
@@ -106,8 +106,8 @@ List conversationList = [
     "hasStory": true,
     "message": "Where are you?",
     "time": "5:00 pm",
-    "messageread": true,
-    "noofmessagesunread":0
+    "messages_read": true,
+    "no_of_messages_unread":0
   },
   {
     "name": "Daniel",
@@ -116,7 +116,7 @@ List conversationList = [
     "hasStory": false,
     "message": "It's good!!",
     "time": "7:00 am",
-    "messageread": false,
-    "noofmessagesunread":6
+    "messages_read": false,
+    "no_of_messages_unread":6
   }
 ];

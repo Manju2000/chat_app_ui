@@ -9,11 +9,10 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Chat App',
       theme: ThemeData(
         primaryColor: Colors.white,
       ),
@@ -28,30 +27,37 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         leading: IconButton(
-          onPressed: () {  },
+          onPressed: () { },
           icon:Icon(Icons.search),
         ),
         centerTitle: true,
         title: Text("Contacts"),
         actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz))
-        ],),
+          IconButton(
+              onPressed: (){},
+              icon: Icon(Icons.more_horiz),
+          ),
+        ],
+      ),
       body: Column(
-        children: [
+        children:
+        [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
+            children: [
             Text("ONLINE"),
             TextButton.icon(
                 label:Text("ADD FRIENDS"),
                 onPressed:(){},
                 icon: Icon(Icons.add),
             ),
-          ],),
+            ],
+          ),
           FriendsOnline(),
           ConversationList()
         ],
-      )); // This trailing comma makes auto-formatting nicer for build methods
+      ),
+    );
   }
 }
 
